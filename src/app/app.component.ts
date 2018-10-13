@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular 4 project';
-
+  months = ['January','Feburary',"March", "April", "May", 
+  "June", "July", "August", "September",
+  "October", "November", "December"];
+  
 }
