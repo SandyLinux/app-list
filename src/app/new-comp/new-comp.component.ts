@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MyserviceService} from './../myservice.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-new-comp',
@@ -6,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-comp.component.css']
 })
 export class NewCompComponent implements OnInit {
-  newcomponent='enter in new component created'
-
-  constructor() { }
+  newcomponent='new component app'
+  ndate = null;
+  
+  newcomponentproperty;
+  constructor(private myservice:MyserviceService,
+    private http:HttpClient) { }
 
   ngOnInit() {
+    this.ndate = this.myservice.showTodayDate();
+    this.newcomponentproperty = this.myservice.serviceproperty;
+    
+
   }
 
 }
