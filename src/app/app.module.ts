@@ -7,6 +7,8 @@ import {HttpModule} from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 #line new added
+#line new added
+#line new added
 
 
 import { AppComponent } from './app.component';
