@@ -20,7 +20,7 @@ export class AppComponent {
   ];
   isAvai = true;
 
-  a = 0 
+  a = 10
   todaydate = new Date();
   jsonval = {name:'Rox', age:25, address:{
     a1:'1 main street',
